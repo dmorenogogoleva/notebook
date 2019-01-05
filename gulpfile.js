@@ -50,7 +50,7 @@ gulp.task('scripts', function () {
         ]
       ]
     }))
-    .pipe(gulp.dest('build/scripts'));
+    .pipe(gulp.dest('dist/scripts'));
 });
 
 
@@ -59,7 +59,7 @@ gulp.task('imagemin', function () {
     .pipe(imagemin([
       imagemin.optipng({ optimizationLevel: 9 }),
     ]))
-    .pipe(gulp.dest('build/images'));
+    .pipe(gulp.dest('dist/images'));
 });
 
 gulp.task('copy', function () {
@@ -68,19 +68,19 @@ gulp.task('copy', function () {
     'src/fonts/**/*.*',
     '../favicon.ico'
   ], { base: './src' })
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('dist'))
     .pipe(browserSync.stream());
 });
 
 gulp.task('copy-ico', function () {
   return gulp.src('*.ico')
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('dist'))
 });
 
 gulp.task('serve', function () {
   browserSync.init({
     server: {
-      baseDir: './build'
+      baseDir: './dist'
     }
 
   });
