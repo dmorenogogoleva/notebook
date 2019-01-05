@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta name="msapplication-TileColor" content="#dcbef6">
+  <meta name="theme-color" content="#dcbef6">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>start</title>
+  <meta name="description" content="some content">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="icon" href="./favicon.ico" sizes="32x32" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container">
+    <header class="page-header">
+      <nav class="menu">
+        <ul class="menu__items">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">конспект</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="start.html">рабочее окружение</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="page-main__title">рабочее окружение</h1>
+      <section class="items">
+        <article class="item">
+          <h2 class="item__title">vs code</h2>
+          <article class="item__wrap">
+            <p class="item__text">
+              <a class="item__link" href="https://code.visualstudio.com/" target="_blank">скачать</a>
+              <h3 class="item__text-title">список приложений:</h3>
+              <ul class="item__list">
+                <li class="item__list-item">HTMLHint</li>
+                <li class="item__list-item">auto rename tag</li>
+                <li class="item__list-item">beautify css/sass/scss/less</li>
+                <li class="item__list-item">bracket pair colorizer</li>
+                <li class="item__list-item">editorconfig for vs code</li>
+                <li class="item__list-item">eslint</li>
+                <li class="item__list-item">htmltagwrap</li>
+                <li class="item__list-item">indent-rainbow</li>
+                <li class="item__list-item">material icon theme</li>
+                <li class="item__list-item">scss IntelliSense</li>
+                <li class="item__list-item">wrap console log</li>
+              </ul>
+            </p>
+          </article>
+
+          <article class="item__wrap">
+            <p class="item__text">
+              <a class="item__link" href="https://code.visualstudio.com/insiders/" target="_blank">insiders edition</a>
+              <h3 class="item__text-title">для реакта:</h3>
+              <ul class="item__list">
+                <li class="item__list-item">simple react snippets</li>
+                <li class="item__list-item">import cost</li>
+              </ul>
+            </p>
+            <p class="item__text">
+              временно выключить eslint:
+              <br />
+              <code>/* eslint-disable */</code>
+            </p>
+            <a class="item__link" href="https://code.visualstudio.com/docs/getstarted/locales" target="_blank">поменять
+              язык</a>
+          </article>
+        </article>
+
+        <article class="item">
+          <h2 class="item__title">node</h2>
+          <article class="item__wrap">
+            <h3 class="item__text-title">переустановка node и npm</h3>
+            <ol class="item__list">
+              <li class="item__list-item">удалить node.js через установку и удаление программ</li>
+              <li class="item__list-item">
+                <a class="item__link" href=" https://nodejs.org/en/ " target="_blank">установить</a> node.js
+                (стабильную)</li>
+              <li class="item__list-item">переустановить npm
+                <br>
+                <code>npm install npm@latest -g</code>
+              </li>
+            </ol>
+            <p class="item__text">версию можно проверить командой
+              <code> node -v</code>
+              <br>для npm —
+              <code> npm -v</code>
+            </p>
+          </article>
+
+          <article class="item__wrap">
+            <h3 class="item__text-title">yarn (он быстрее)</h3>
+            <p class="item__text">
+              <ol class="item__list">
+                <li class="item__list-item">
+                  <a class="item__link" href="https://chocolatey.org/install" target="_blank">установить</a> chocolatey</li>
+                <li class="item__list-item">
+                  <code>choco install yarn</code>
+                </li>
+              </ol>
+            </p>
+          </article>
+        </article>
+
+        <article class="item">
+          <h2 class="item__title">git</h2>
+          <article class="item__wrap">
+            <h3 class="item__text-title">скачать гит</h3>
+            <a class="item__link" href="https://git-scm.com/" target="_blank">скачать</a>
+          </article>
+          <article class="item__wrap">
+            <h3 class="item__text-title">git kraken</h3>
+            <a class="item__link" href="https://www.gitkraken.com/" target="_blank">скачать</a>
+            </p>
+          </article>
+        </article>
+
+        <article class="item">
+          <h2 class="item__title">консоль</h2>
+          <article class="item__wrap">
+            <h3 class="item__text-title">гитбаш</h3>
+            <p class="item__text">
+              <a class="item__link" href="https://git-scm.com/" target="_blank">скачать</a>
+            </p>
+          </article>
+          <article class="item__wrap">
+            <h3 class="item__text-title">cmder (full)</h3>
+            <p class="item__text">
+              <a class="item__link" href="http://cmder.net/" target="_blank">скачать</a>
+            </p>
+            <p class="item__text"> перезагрузить консоль
+              <br>
+              <code>refreshenv</code>
+            </p>
+          </article>
+        </article>
+
+        <article class="item">
+          <h2 class="item__title">расширения для браузера</h2>
+          <article class="item__wrap">
+            <p class="item__text">
+              <ul class="item__list">
+                <li class="item__list-item">
+                  <a class="item__link" href="https://chrome.google.com/webstore/detail/google-arts-culture/akimgimeeoiognljlfchpbkpfbmeapkh"
+                    target="_blank"> google arts & culture</a>
+                </li>
+                <li class="item__list-item">
+                  <a class="item__link" href="https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi"
+                    target="_blank"> perfect pixel</a>
+                </li>
+                <li class="item__list-item">
+                  <a class="item__link" href="https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl"
+                    target="_blank">Full Page Screen Capture</a>
+                </li>
+                <li class="item__list-item">
+                  <a class="item__link" href="https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi"
+                    target="_blank">Allow-Control-Allow-Origin</a>
+                </li>
+              </ul>
+            </p>
+          </article>
+        </article>
+
+        <article class="item">
+          <h2 class="item__title">скриншоты</h2>
+          <article class="item__wrap">
+            <h3 class="item__text-title">share X</h3>
+            <p class="item__text">
+              <a class="item__link" href="https://getsharex.com" target="_blank">скачать</a>
+            </p>
+          </article>
+        </article>
+
+        <article class="item">
+          <h2 class="item__title">запись гифок</h2>
+          <article class="item__wrap">
+            <h3 class="item__text-title">gifcam</h3>
+            <p class="item__text">
+              <a class="item__link" href="https://gifcam.ru.uptodown.com/windows/download" target="_blank">скачать</a>
+            </p>
+          </article>
+        </article>
+      </section>
+    </main>
+  </div>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>

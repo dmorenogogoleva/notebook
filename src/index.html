@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta name="msapplication-TileColor" content="#dcbef6">
+  <meta name="theme-color" content="#dcbef6">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>start</title>
+  <meta name="description" content="some content">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="icon" href="./favicon.ico" sizes="32x32" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container">
+    <header class="page-header">
+      <nav class="menu">
+        <ul class="menu__items">
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="index.html">конспект</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="start.html">рабочее окружение</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="page-main__title">конспект по верстке</h1>
+      <section class="items">
+        <article class="item">
+          <h2 class="item__title">как создать ssh key</h2>
+          <p class="item__text">
+            <ul class="item__list">
+              <li class="item__list-item">cd ~/.ssh</li>
+              <li class="item__list-item">ssh-keygen -t rsa -b 4096 -C "iwanttobealight@yandex.ru"</li>
+              <li class="item__list-item">ввести имя файла</li>
+              <li class="item__list-item">eval $(ssh-agent -s)</li>
+              <li class="item__list-item">ssh-add ~/.ssh/ИМЯ</li>
+              <li class="item__list-item">зайти в папку с проектом clip
+                < ~/.ssh/ИМЯ.pub </li> <li class="item__list-item">зайти в гитхаб > настройки > ssh and gpg keys > new
+                  ssh key > скопировать ИМЯ.pub > add ssh key</li>
+            </ul>
+          </p>
+        </article>
+        <article class="item">
+          <h2 class="item__title">С чего начинается HTML</h2>
+          <article class="item__wrap">
+            <h3 class="item__text-title">доктайп</h3>
+            <p class="item__text">Каждый HTML-документ должен начинаться с декларации типа документа или «доктайпа».
+              Тип документа нужен, чтобы
+              браузер мог определить версию HTML и правильно отобразить страницу
+              <br>
+              <br> Например, для старой версии HTML 4.01 доктайп выглядит так:
+              <br> !DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"
+              <br>
+              <br> А для последней версии HTML уже намного проще:
+              <br> !DOCTYPE html
+              <br>
+              <br> Тег DOCTYPE, указанный в примере, - - самый простой способ обеспечить стандартный режим отображения;
+              использование
+              этого тега рекомендовано стандартом HTML5. Для предыдущих версий HTML рекомендованы другие варианты, но
+              все
+              существующие на текущий момент браузеры используют такой тег DOCTYPE для отображения страницы в
+              стандартном
+              режиме, даже Internet Explorer 6. На сегодняшний день не существует веских причин для использования более
+              сложного
+              тега DOCTYPE. Использование какого-либо другого тега DOCTYPE может привести к переключению браузера в
+              частично
+              стандартный режим отображения или в режим совместимости
+            </p>
+          </article>
+          <article class="item__wrap">
+            <h3 class="item__text-title">Отличия XHTML от HTML</h3>
+            <p class="item__text">XHTML имеет одинаковый с HTML набор тэгов.
+              <br> XHTML отличается от HTML более строгим синтаксисом.</p>
+          </article>
+        </article>
+        <article class="item">
+          <h2 class="item__title">progressive rendering</h2>
+          <article class="item__wrap">
+            <h3 class="item__text-title">суть</h3>
+            <p class="item__text">Наверное, вы сталкивались хотя бы раз в жизни с JPEG-картинкой, которая сперва
+              загружается с сервера мутной,
+              а по мере загрузки остального содержимого становится чётче. Такой формат картинки называется "Progressive
+              JPEG",
+              и его основная идея – показать как можно скорее пользователю хоть какое-то содержимое, пусть и не до
+              конца
+              готовое. Пользователь с первой секунды уже будет знать размер картинки и ее примерное содержимое, а в
+              дальнейшем
+              содержимое будет становится только отчётливее</p>
+          </article>
+          <article class="item__wrap">
+            <p class="item__text">
+              <img src="images/img-1.png" width="611" height="300" alt="прогрессивный рендеринг">
+            </p>
+          </article>
+        </article>
+        <article class="item">
+          <h2 class="item__title">HTML-атрибуты data-*</h2>
+          <p class="item__text">Можно присобачить к любому тегу и старые браузеры ничего не скажут против.
+            <br> Можно в названии писать словосочетания: data-email-id=”190”.
+            <br> Можно использовать любую строку в значении.
+            <br> Можно использовать любой количество таких параметров для одного тега.
+            <br>
+            <br> Data-атрибут в настоящий момент не несет для вас никакой ценности. Его единственной задачей является
+            добавление
+            к элементу данных, которые валидатор HTML-разметки не признает ошибочными.
+            <br> Он нужен для создания динамических страниц при использовании встроенного в браузер языка
+            программирования JavaScript</p>
+        </article>
+        <article class="item">
+          <h2 class="item__title">difference between a cookies, sessionStorage and localStorage</h2>
+          <article class="item__wrap">
+            <h3 class="item__text-title">cookies</h3>
+            <p class="item__text">Cookie - это небольшая порция текстовой информации, которую сервер передает браузеру.
+              Браузер будет хранить эту
+              информацию и передавать ее серверу с каждым запросом как часть HTTP заголовка. Одни значения cookie могут
+              храниться
+              только в течение одной сессии, они удаляются после закрытия броузера. Другие, установленные на некоторый
+              период
+              времени, записываются в файл. Обычно этот файл называется 'cookies.txt' и лежит в рабочей директории
+              установленного
+              на компьютер браузера.
+              <br>
+              <br> Cookies это данные сохраненные на сервере</p>
+          </article>
+          <article class="item__wrap">
+            <h3 class="item__text-title">sessionStorage and localStorage</h3>
+            <p class="item__text">Авторам при реализации некоторого функционала на веб-сайте иногда приходится
+              сохранять данные на устройстве пользователя
+              для того, чтобы потом к ним можно было обратиться. Реализовать эту возможность позволяют объекты API
+              HTML5
+              sessionStorage и localStorage.
+              <br> Отличаются эти объекты друг от друга только тем, что имеют различный период времени хранения данных,
+              помещённых
+              в них. Объект sessionStorage хранит данные ограниченное время, они удаляются сразу после того как
+              пользователь
+              завершает свой сеанс или закрывает браузер. Объект localStorage в отличие от объекта sessionStorage
+              хранит
+              данные неограниченное время.</p>
+          </article>
+        </article>
+        <article class="item">
+          <h2 class="item__title">difference between &#8249;script&#8250;, &#8249;script async&#8250; and &#8249;script
+            defer&#8250;</h2>
+          <article class="item__wrap item__wrap--wide">
+            <h3 class="item__text-title"> &#8249;script&#8250;</h3>
+            <p class="item__text">Тег &#8249;script&#8250; предназначен для описания скриптов, может содержать ссылку
+              на программу или ее текст
+              на определенном языке. Скрипты могут располагаться во внешнем файле и связываться с любым
+              HTML-документом.
+              Такой подход позволяет использовать одни и те же общие функции на многих веб-страницах и ускоряет их
+              загрузку,
+              т.к. внешний файл кэшируется при первой загрузке, и скрипт вызывается быстрее при последующих вызовах
+              <br>
+              <br> &#8249;script&#8250; может располагаться в заголовке или теле HTML-документа в неограниченном
+              количестве.
+              В большинстве случаев местоположение скрипта никак не сказывается на работу программы. Однако скрипты,
+              которые
+              должны выполняться в первую очередь, обычно помещают в заголовок документа</p>
+          </article>
+          <article class="item__wrap">
+            <h3 class="item__text-title">&#8249;script async&#8250;</h3>
+            <p class="item__text">При наличии атрибута async браузер при возможности запускает скрипт асинхронно. Это
+              означает, что указанный в
+              атрибуте src файл будет выполняться без ожидания загрузки и отображения веб-страницы. В то же время и
+              страница
+              не ожидает результата выполнения скрипта, а продолжает загружаться как обычно</p>
+          </article>
+          <article class="item__wrap">
+            <h3 class="item__text-title">&#8249;script defer&#8250;</h3>
+            <p class="item__text">Атрибут defer откладывает выполнение скрипта до тех пор, пока вся страница не будет
+              загружена полностью</p>
+          </article>
+        </article>
+        <article class="item">
+          <h2 class="item__title">POST и GET</h2>
+          <article class="item__wrap">
+            <h3 class="item__text-title">post</h3>
+            <p class="item__text">Если же форма будет отправляться методом POST, адрес полученной страницы будет всегда
+              один, какие бы данные не
+              вводились. Объем передаваемой информации у этих методов тоже различен. С помощью GET лучше отправить
+              небольшие
+              тестовые данные. Максимальный объем здесь 4 Кб. Для POST такого явного ограничения нет. Максимальный
+              размер
+              для него задается настройками сервера. Поэтому он подходит для загрузки файлов на сервер и передачи
+              больших
+              объемов текста.</p>
+          </article>
+          <article class="item__wrap">
+            <h3 class="item__text-title">get</h3>
+            <p class="item__text">Если, в поля два текстовых поля формы ввести значения 15 и 20, то при выполнении
+              GET-запроса, в адресной строке
+              браузера будет явно виден url (адрес) страницы. GET стоит использовать тогда, когда его результат можно
+              полезно
+              использовать для получения необходимой страницы повторно. Например, с параметрами необходимой сортировки
+              или
+              выборкой. Строку GET запроса можно увидеть в любом интернет поисковике.</p>
+          </article>
+        </article>
+        <article class="item">
+          <h2 class="item__title">элементы</h2>
+          <p class="item__text">Элементы HTML страницы обычно делятся на блочные и строчные</p>
+          <article class="item__wrap">
+            <h3 class="item__text-title">блочные</h3>
+            <p class="item__text">Блочные элементы можно представлять как прямоугольные области на странице. Они имеют
+              следующие особенности:
+              <br>
+              <br> До и после блочного элемента существует перенос строки. Блочным элементам можно задавать ширину,
+              высоту, внутренние
+              и внешние отступы. Занимают всё доступное пространство по горизонтали. К блочным элементам относятся
+              такие
+              теги как: &#8249;p&#8250;, &#8249;h1&#8250;, &#8249;h2&#8250;, &#8249;ul&#8250; и так далее.</p>
+          </article>
+          <article class="item__wrap">
+            <h3 class="item__text-title">строчные</h3>
+            <p class="item__text">Располагаются друг за другом в одной строке, при необходимости строка переносится.
+              Особенности:
+              <br>
+              <br> До и после строчного элемента отсутствуют переносы строки. Ширина и высота строчного элемента
+              зависит только
+              от его содержания, задать размеры с помощью CSS нельзя. Можно задавать только горизонтальные отступы.
+              Строчные
+              элементы реагируют только на горизонтальные отступы. К строчным элементам относятся такие теги как:
+              &#8249;a&#8250;,
+              &#8249;strong&#8250;, &#8249;em&#8250;, &#8249;span&#8250; и так далее.
+              <br>
+              <br> Еще раз акцентируем внимание на особенности поведения строчных элементов в блочной модели:
+              <br>
+              <br>
+              <ul class="item__list">
+                <li class="item__list-item">Не реагируют на CSS-свойства width и height</li>
+                <li class="item__list-item">Частично реагируют на margin, воспринимая только горизонтальные отступы</li>
+                <li class="item__list-item">Частично реагируют на padding, воспринимая только горизонтальные отступы</li>
+                <li class="item__list-item">При задании вертикальных padding визуально увеличиваются, но без увеличения
+                  занимаемого места (не отталкивают
+                  другие элементы)</li>
+                <li class="item__list-item">Воспринимают рамки. Аналогично padding рамки сверху и снизу не увеличивают
+                  занимаемое элементом место.</li>
+              </ul>
+            </p>
+          </article>
+        </article>
+        <article class="item">
+          <h2 class="item__title">отступы</h2>
+          <article class="item__wrap">
+            <p class="item__text">Вертикальный отступ между двумя соседними элементами равен максимальному отступу
+              между ними. Если отступ одного
+              элемента равен 20px, а второго 40px, то отступ между ними будет 40px.
+              <br>
+              <br> Этот эффект называется эффектом «схлопывания» внешних отступов или «схлопывания» маргинов.
+              <br>
+              <br> Горизонтальные отступы между элементами просто складываются. Например, горизонтальный отступ между
+              двумя элементами
+              с отступами 30px будет равен 60px.</p>
+          </article>
+          <p class="item__text">
+            <article class="item__wrap">«Выпадание» — это еще один эффект, связанный с вертикальными внешними
+              отступами. Если внутри родительского блока
+              расположить блок и задать ему отступ сверху, то внутренний блок прижмется к верхнему краю родительского,
+              а
+              у родительского элемента появится отступ сверху. Т.е. верхний отступ внутреннего элемента «выпадает» из
+              родительского
+              элемента.
+              <br>
+              <br> Если у родительского элемента тоже был задан внешний отступ, то выберется максимальный отступ между
+              собственным
+              и «выпавшим» .
+              <br>
+              <br> Чтобы избавиться от эффекта выпадания, можно задать родительскому элементу внутренний отступ
+              (паддинг) сверху
+              или добавить рамку сверху.
+              <br>
+              <br> Внешние и внутренние отступы всегда складываются.</article>
+          </p>
+        </article>
+        <article class="item">
+          <h2 class="item__title">ширина</h2>
+          <p class="item__text">CSS-свойство width задаёт не общую ширину блока, а только ширину содержания. Общая
+            ширина блока затем складывается
+            из трёх компонентов: ширины содержания, внутренних отступов и ширины рамок слева и справа.
+            <br>
+            <br> Поведение элемента может зависеть от того, как именно вы зададите его ширину.</p>
+          <article class="item__wrap">
+            <p class="item__text">
+              Первый вариант. Вариант по умолчанию, когда ширина не задается, соответствует значению width:auto;. В
+              этом случае блок занимает
+              всю ширину родительского блока. Если у блока есть внутренние отступы или рамки, то его ширина содержания
+              автоматически
+              уменьшается, а общая ширина остается равной ширине родителя.
+            </p>
+          </article>
+          <article class="item__wrap">
+            <p class="item__text">Второй вариант. Когда ширина блока задана явно, например, width:100%;. В этом случае
+              ширина содержания блока
+              равна ширине родительского блока. Если блоку добавить внутренние отступы и рамки, то его общая ширина
+              становится
+              больше ширины родителя.</p>
+          </article>
+        </article>
+        <article class="item">
+          <h2 class="item__title">display</h2>
+          <article class="item__wrap">
+            <h3 class="item__text-title">inline-block</h3>
+            <ul class="item__list">
+              <li class="item__list-item">им можно задавать размеры, рамки и отступы, как и блочным элементам</li>
+              <li class="item__list-item">их ширина по умолчанию зависит от содержания, а не растягивается на всю
+                ширину контейнера</li>
+              <li class="item__list-item">они не порождают принудительных переносов строк, поэтому могут располагаться
+                на одной строке, пока помещаются
+                в родительский контейнер</li>
+              <li class="item__list-item">элементы в одной строке выравниваются вертикально подобно строчным элементам</li>
+            </ul>
+          </article>
+          <article class="item__wrap">
+            <h3 class="item__text-title">table</h3> Первое значение — display:table задает элементу тип таблица.
+            Особенности табличных элементов:
+            <ul class="item__list">
+              <li class="item__list-item">можно задавать ширину, высоту, рамки, отступы</li>
+              <li class="item__list-item">по умолчанию ширина зависит от содержания</li>
+              <li class="item__list-item">переносы строки до и после элемента</li>
+            </ul>
+          </article>
+        </article>
+        <article class="item">
+          <h2 class="item__title">вес селекторов</h2>
+          <article class="item__wrap">
+            <p class="item__text">Специфичность селектора разбивается на 4 группы — a, b, c, d</p>
+            <ul class="item__list">
+              <li class="item__list-item">инлайновый стиль дает а=1, иначе a=0</li>
+              <li class="item__list-item">b равно количеству id (то что #)</li>
+              <li class="item__list-item">c равно количеству классов, атрибутов и псевдоклассов</li>
+              <li class="item__list-item">d равно количеству тегов и псевдоэлементов</li>
+            </ul>
+          </article>
+          <article class="item__wrap">
+            <table class="item__table">
+              <tbody>
+                <tr class="item__table-row">
+                  <th>Селектор</th>
+                  <th>a, b, c, d</th>
+                  <th class="item__table-result">Число</th>
+                </tr>
+                <tr class="item__table-row">
+                  <td>span</td>
+                  <td class="item__table-cell">0, 0, 0, 1</td>
+                  <td class="item__table-result">1</td>
+                </tr>
+                <tr class="item__table-row">
+                  <td>div .cat-in-box</td>
+                  <td class="item__table-cell">0, 0, 1, 1</td>
+                  <td class="item__table-result">11</td>
+                </tr>
+                <tr class="item__table-row">
+                  <td>#floor .cat-in-box</td>
+                  <td class="item__table-cell">0, 1, 1, 0</td>
+                  <td class="item__table-result">110</td>
+                </tr>
+                <tr class="item__table-row">
+                  <td>div span</td>
+                  <td class="item__table-cell">0, 0, 0, 2</td>
+                  <td class="item__table-result">2</td>
+                </tr>
+                <tr class="item__table-row">
+                  <td>.cat-in-box</td>
+                  <td class="item__table-cell">0, 0, 1, 0</td>
+                  <td class="item__table-result">10</td>
+                </tr>
+                <tr class="item__table-row">
+                  <td>#floor span</td>
+                  <td class="item__table-cell">0, 1, 0, 1</td>
+                  <td class="item__table-result">101</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </article>
+        <article class="item">
+          <h2 class="item__title">position</h2>
+          <article class="item__wrap">
+            <h3 class="item__text-title">static</h3> по умолчанию
+          </article>
+          <article class="item__wrap">
+            <h3 class="item__text-title">relative</h3> Значение relative обозначает «относительное позиционирование».
+            Относительно спозиционированный
+            элемент можно перемещать относительно его исходного положения. Относительно спозиционированный элемент
+            остается
+            в потоке документа
+          </article>
+          <article class="item__wrap">
+            <h3 class="item__text-title">absolute</h3> Абсолютно спозиционированные элементы обладают следующими
+            особенностями:
+            <ul class="item__list">
+              <li class="item__list-item">Выпадают из потока документа. Место, которое они занимали, становится как бы
+                пустым и его занимают соседние
+                элементы.</li>
+              <li class="item__list-item">Ширина по умолчанию зависит от содержимого (а не растягивается на всю
+                доступную ширину)</li>
+              <li class="item__list-item">Остаются на том же месте, где были, если не заданы значения свойств top,
+                left, right, bottom.</li>
+            </ul>
+          </article>
+          <article class="item__wrap">
+            <h3 class="item__text-title">fixed</h3> Фиксированное позиционирование похоже на абсолютное, но есть и
+            отличия:
+            <ul class="item__list">
+              <li class="item__list-item">Фиксированный элемент тоже выпадает из потока.</li>
+              <li class="item__list-item">Фиксированный элемент привязывается к определенной точке в окне браузера и
+                остается на ней всегда, даже при
+                прокрутке страницы.</li>
+              <li class="item__list-item">Фиксированный элемент можно позиционировать с помощью свойств top, left,
+                right, bottom, но точка отсчета всегда
+                привязана к окну браузера.</li>
+            </ul>
+          </article>
+        </article>
+        <article class="item">
+          <h2 class="item__title">самые тяжелые свойства</h2>
+          <article class="item__wrap">
+            <h3 class="item__text-title">веб шрифты, custom scroll, smooth scrolling</h3>
+            <p class="item__text">
+              <ul class="item__list">
+                <li class="item__list-item">большое количество подключенных веб-шрифтов, даже если 70% из них не
+                  используются — сильно тормозят прокрутку
+                  и рендеринг страницы</li>
+                <li class="item__list-item">кастомный скролл — одно из самых больших зол. Хуже только кастомный скролл
+                  плюс js/jQuery плагин smooth scrolling
+                  effect</li>
+              </ul>
+            </p>
+          </article>
+          <article class="item__wrap">
+            <h3 class="item__text-title">border-radius, box-shadow</h3>
+            <p class="item__text">Самые дорогие CSS свойства — это те свойства, которые браузер должен пересчитывать
+              каждый раз когда прорисовывает
+              элемент. К ним относятся: box-shadow, border-radius, прозрачность (так как браузер должен высчитывать что
+              показывает
+              под полу-прозрачным элементом), трансформами transform и убийцы производительности CSS фильтры</p>
+          </article>
+        </article>
+        <article class="item">
+          <h2 class="item__title">самые легкие свойства (анимация!)</h2>
+          <article class="item__wrap">
+            <h3 class="item__text-title"> translate, scale, rotation and opacity</h3>
+            <p class="item__text">transform: translate(npx, npx);
+              <br> transform: rotate(ndeg);
+              <br> transform: scale(n);
+              <br> opacity: 0...1;</p>
+          </article>
+          <article class="item__wrap">
+            <h3 class="item__text-title">подробнее</h3>
+            <p class="item__text">
+              <a class="item__link" href="https://www.chenhuijing.com/slides/css-triggers">layer, paint, composite</a>
+            </p>
+          </article>
+        </article>
+        <article class="item">
+          <h2 class="item__title">псевдоэлементы</h2>
+          <article class="item__wrap">
+            <h3 class="item__text-title">::before, ::after</h3>
+            <p class="item__text">Применяется для отображения желаемого контента до содержимого элемента, к которому он
+              добавляется. Работает совместно
+              со свойством content</p>
+          </article>
+          <article class="item__wrap">
+            <h3 class="item__text-title">::first-letter</h3>
+            <p class="item__text">Определяет стиль первого символа в тексте элемента, к которому добавляется. К этому
+              псевдоэлементу могут применяться
+              только стилевые свойства, связанные со свойствами шрифта, полями, отступами, границами, цветом и фоном</p>
+          </article>
+          <article class="item__wrap">
+            <h3 class="item__text-title">::first-line</h3>
+            <p class="item__text">Задает стиль первой строки форматированного текста. Длина этой строки зависит от
+              многих факторов, таких как используемый
+              шрифт, размер окна браузера, ширина блока, языка и т.д. В правилах стиля допустимо использовать только
+              свойства,
+              относящиеся к шрифту, изменению цвета текста и фона</p>
+          </article>
+          <article class="item__wrap">
+            <h3 class="item__text-title">::selection</h3>
+            <p class="item__text">Псевдоэлемент ::selection применяет стиль к выделенному пользователем тексту. В
+              правилах стилей допускается использовать
+              следующие свойства: color, background и background-color</p>
+          </article>
+        </article>
+        <article class="item">
+          <h2 class="item__title">вьюпорт</h2>
+          <article class="item__wrap">
+            <h3 class="item__text-title">что это</h3>
+            <p class="item__text">Вьюпорт — видимая область страницы в браузере, окно браузера включая полосу
+              прокрутки.</p>
+          </article>
+          <article class="item__wrap">
+            <p class="item__text">
+              <b>vw</b> — 1% от ширины области просмотра
+              <br>
+              <b>vh</b> — 1% от высоты области просмотра
+              <br>
+              <b>vmin</b> — 1% от меньшего значения из ширины и высоты области просмотра
+              <br>
+              <b>vmax</b> — Определяется, что больше, значение ширины или высоты области просмотра и от него
+              вычисляется 1%</p>
+          </article>
+        </article>
+        <article class="item">
+          <h2 class="item__title">.json</h2>
+          <article class="item__wrap">
+            <h3 class="item__text-title">.json</h3>
+            <p class="item__text">Это один из наиболее удобных форматов данных при взаимодействии с JavaScript. Если
+              нужно с сервера взять объект
+              с данными и передать на клиенте, то в качестве промежуточного формата – для передачи по сети, почти
+              всегда
+              используют именно его.</p>
+          </article>
+          <article class="item__wrap">
+            <h3 class="item__text-title">package.json</h3>
+            <p class="item__text">Нужен для установки зависимостей</p>
+          </article>
+        </article>
+        <article class="item">
+          <h2 class="item__title">API</h2>
+          <h3 class="item__text-title">Что такое API</h3>
+          <p class="item__text">API (Application Programming Interface) — это интерфейс программирования, интерфейс
+            создания приложений. Если говорить
+            более понятным языком, то API — это готовый код для упрощения жизни программисту.</p>
+        </article>
+        <article class="item">
+          <h2 class="item__title">difference between progressive enhancement and graceful degradation</h2>
+          <article class="item__wrap">
+            <h3 class="item__text-title">graceful degradation</h3>
+            <p class="item__text">Graceful degradation может выражаться в возможности работы при отключенном
+              JavaScript, в достаточно аккуратном
+              отображении интерфейса в браузере, не поддерживающем новые свойства CSS3, в адекватном отображении сайта
+              при
+              отключенных изображениях. В каждом из этих случаев работа пользователя с интерфейсом будет в принципе
+              возможна,
+              хотя и не так удобна</p>
+          </article>
+          <article class="item__wrap">
+            <h3 class="item__text-title">progressive enhancement</h3>
+            <p class="item__text">Что же такое progressive enhancement? Чаще всего этот термин переводят, как
+              прогрессивное улучшение. Прогрессивное
+              улучшение предполагает, что веб-интерфейсы должны создаваться поэтапно, циклически, от простого к
+              сложному.
+              На каждом из этапов должен получаться законченный веб-интерфейс, который будет лучше, красивее и удобнее
+              предыдущего.
+              Таких этапов три:
+              <ul class="item__list">
+                <li class="item__list-item">«Старый-добрый-HTML» этап</li>
+                <li class="item__list-item">CSS этап</li>
+                <li class="item__list-item">JavaScript этап</li>
+              </ul>
+            </p>
+          </article>
+        </article>
+      </section>
+    </main>
+  </div>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
